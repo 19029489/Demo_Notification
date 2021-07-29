@@ -83,14 +83,14 @@ public class MainActivity extends AppCompatActivity {
                 PendingIntent pIntent = PendingIntent.getActivity(MainActivity.this, requestCode, intent, PendingIntent.FLAG_CANCEL_CURRENT);
 
                 NotificationCompat.BigTextStyle bigText = new NotificationCompat.BigTextStyle();
-                bigText.setBigContentTitle("Big Text - Long Content");
-                bigText.bigText("This is one big text" + " - A quick brown fox jumps over a lazy brown dog " + "\nLorem ipsum dolor sit amet, sea eu quod des");
-                bigText.setSummaryText("Reflection Journal?");
+                bigText.setBigContentTitle("Deals from top electronics retailers");
+                bigText.bigText("Mobile 50% off\nLaptop 20% off\nTablet 22% off\nPrinter 30% off\nOthers 10% off");
+                bigText.setSummaryText("Excellent deals");
 
                 //Build notification
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(MainActivity.this, "default");
-                builder.setContentTitle("Amazing Offer!");
-                builder.setContentText("Subject");
+                builder.setContentTitle("Deals from top electronics retailers");
+                builder.setContentText("Excellent deals");
                 builder.setSmallIcon(android.R.drawable.btn_star_big_off);
                 builder.setContentIntent(pIntent);
                 builder.setStyle(bigText);
